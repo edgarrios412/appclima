@@ -1,38 +1,64 @@
-.App {
+body {
+  background-color: rgb(32, 32, 32);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top: 5%;
+  background-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img{
+  position: absolute;
+  width: 200px;
+  margin-top: 50px;
+  margin-left: -300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.temp{
+  margin-top: 80px;
+  margin-left: -50px;
+  position: absolute;
+  font-size: 5rem;
+  font-weight: 200;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tempmm{
+  margin-top: 180px;
+  margin-left: -30px;
+  position: absolute;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+  text-align: center;
+  color: white;
+  margin-top: 90px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: 0;
+  padding: 5px;
+  font-size: 2rem;
+  width: 100px;
+  overflow:scroll;
+}
+
+.antes{
+  color: rgb(182, 182, 182);
+  font-size: 1.4rem;
+  margin-top: 100px;
+  margin-left: -50px;
+}
+.despues{
+  color: rgb(185, 185, 185);
+  font-size: 1.4rem;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+
+.input:focus{
+  outline: 0;
 }
