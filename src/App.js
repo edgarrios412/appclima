@@ -37,8 +37,8 @@ function App() {
   }
 
   useEffect(() => {
-    getdata();
-  }, [search]); // eslint-disable-next-line react-hooks/exhaustive-deps
+    getdata();// eslint-disable-next-line
+  }, [search]); 
 
   return (
     <div className="App">
