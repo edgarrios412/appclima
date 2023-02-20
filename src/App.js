@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <span className="antes">Ahora mismo en</span>
+      <span className="antes">Ahora mism en</span>
       <input className="input" onKeyDown={handleSearch} onKeyUp={ajustar} placeholder="Ciudad" spellcheck="false"/>
       <span className="despues">el clima esta:</span>
       <p></p>
