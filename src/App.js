@@ -23,7 +23,7 @@ function App() {
   };
 
   const handleSearch = (event) => {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
       setSearch(event.target.value);
       event.target.style.width = event.target.value.length-1 * 25 + "px";
     }
@@ -38,7 +38,7 @@ function App() {
 
   useEffect(() => {
     getdata();
-  }, [search]);
+  }, [search]); // eslint-disable-next-line react-hooks/exhaustive-deps
 
   return (
     <div className="App">
@@ -46,7 +46,7 @@ function App() {
       <input className="input" onKeyDown={handleSearch} onKeyUp={ajustar} placeholder="Ciudad" spellcheck="false"/>
       <span className="despues">el clima esta:</span>
       <p></p>
-      <img className="img" src={Icons(icon)}/>
+      <img className="img" src={Icons(icon)} alt="img"/>
       <b className="temp">{value.main.temp}</b>
       <b className="tempmm">80 / 120</b>
     </div>
